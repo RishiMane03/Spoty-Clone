@@ -67,6 +67,9 @@
   margin-left: 20px;
 }
 
+.homie{
+  text-decoration: none;
+}
 
 .left-bottom-content{
   margin-top: 50px;
@@ -105,20 +108,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Right Side */
 .right-div {
   flex: 4;
@@ -132,6 +121,12 @@
   width: 230.96986389160156px;
   height: 233.0685577392578px;
   margin-top: 100px;
+  overflow: hidden;
+  transition: all ease 1s;
+}
+
+.pop-img:hover{
+  scale: 1.1;
 }
 
 .top {
@@ -358,4 +353,61 @@ footer{
 .bar2{
   width: 97%;
   margin-left: 10px;
+}
+
+/* Media Query */
+
+
+@media screen and (max-width:715px) {
+  .pop{
+    display: flex;
+    flex-direction: column;
+  }
+  .pop-img{
+    margin-top: -17px;
+  }
+  .pop-text{
+    margin-top: -17px;
+    margin-left: 10px;
+  }
+  .name{
+    font-size: 40px;
+    margin-top: -45px;
+  }
+  .lorem{
+    margin-top: -30px;
+  }
+  .duration{
+    margin-top: -10px;
+  }
+  .imgs{
+    margin-top: -95px;
+  }
+}
+
+@media screen and (max-width:590px) {
+  .footer-div2{
+    scale: 0.8;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -70px;
+  }
+  .mid2-Top{
+    margin-left: 120px;
+  }
+  .bar2{
+    width: 70%;
+    margin-left: 30px;
+  }
+
+  .start-time{
+    margin-left: 60px;
+  }
+
+  .end-time{
+    margin-right: 50px;
+  }
+  .footer-album{
+    scale: 0.8;
+  }
 }
